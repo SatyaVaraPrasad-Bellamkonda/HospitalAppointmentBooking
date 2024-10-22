@@ -1,0 +1,256 @@
+/*  body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            color: #333;
+            margin-top: 50px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #4CAF50; Green background
+            border: none; Remove borders
+            color: white; White text
+            padding: 15px 32px; Padding
+            text-align: center; Centered text
+            text-decoration: none; Remove underline
+            display: inline-block; Make the button inline with other elements
+            font-size: 16px; Increase font size
+            margin: 10px; Margin around buttons
+            cursor: pointer; Pointer cursor on hover
+            border-radius: 5px; Rounded corners
+            transition: background-color 0.3s ease, transform 0.3s ease; Smooth transitions
+        }
+        button:hover {
+            background-color: #45a049; Darker green background on hover
+            transform: scale(1.05); Slightly enlarge the button
+        }
+        button:active {
+            background-color: #388e3c; Even darker green background when clicked
+            transform: scale(0.95); Slightly shrink the button
+        }
+        @media (max-width: 600px) {
+            button {
+                width: 100%; Full-width buttons on small screens
+                font-size: 14px; Slightly smaller text
+            }
+        } */
+        
+        
+        
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Taskbar container styling */
+ /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Taskbar container styling */
+        .taskbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; /* Align items vertically */
+            background-color: #007BFF; /* Blue background */
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            z-index: 1000; /* Ensure the taskbar is above other content */
+            color: white;
+            gap: 10px; /* Space between items */
+        }
+
+        /* Button styling */
+        .taskbar button {
+            background-color: #ffffff; /* White background */
+            color: #007BFF; /* Blue text */
+            border: 2px solid #007BFF; /* Blue border */
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .taskbar button:hover {
+            background-color: #007BFF; /* Blue background on hover */
+            color: #ffffff; /* White text on hover */
+        }
+
+        /* Search bar styling */
+        .search-bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px; /* Space between input and button */
+        }
+
+        .search-bar form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: auto; /* Adjust width automatically */
+        }
+
+        .search-bar input[type="number"], .textid {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+            width: 200px;
+        }
+
+        .search-bar input[type="submit"] {
+            background-color: #ffffff; /* White background */
+            color: #007BFF; /* Blue text */
+            border: 2px solid #007BFF; /* Blue border */
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .search-bar input[type="submit"]:hover {
+            background-color: #007BFF; /* Blue background on hover */
+            color: #ffffff; /* White text on hover */
+        }
+
+        /* Body and content styling */
+        body {
+            padding-top: 70px; /* Adjust based on taskbar height */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text */
+            text-align: center;
+        }
+
+        h2 {
+            color: #007BFF; /* Blue text */
+            margin-top: 40px;
+        }
+
+        /* Additional styling for main content */
+        .main-content {
+            padding: 20px;
+            max-width: 90%; /* Responsive width */
+            margin: 0 auto;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        
+        
+        
+        
+           .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content button {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #007BFF;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .taskbar {
+                flex-direction: column;
+                align-items: center; /* Center items horizontally */
+                padding: 10px;
+            }
+
+            .taskbar button {
+                margin: 5px 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .search-bar {
+                width: 100%;
+                justify-content: center; /* Center search bar horizontally */
+                margin-top: 10px; /* Add space above search bar */
+            }
+
+            .search-bar input[type="number"] {
+                width: 100%; /* Full width on smaller screens */
+                margin-right: 0;
+                margin-bottom: 10px; /* Space between input and button */
+            }
+
+            .search-bar input[type="submit"] {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .taskbar button {
+                font-size: 12px;
+            }
+
+            .search-bar input[type="number"], .search-bar input[type="submit"] {
+                font-size: 12px;
+            }
+
+            .main-content {
+                padding: 10px;
+                max-width: 100%;
+            }
+        }
